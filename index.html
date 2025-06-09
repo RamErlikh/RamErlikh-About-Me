@@ -5592,7 +5592,7 @@ body, body * {
         color: #7fa4ff;
         text-shadow: 0 0 5px #7fa4ff;
     }
-    </style><style id="enhanced-loading-styles">
+</style><style id="enhanced-loading-styles">
     .progress-container {
         width: 80%;
         height: 6px;
@@ -5661,7 +5661,7 @@ body, body * {
     body.theme-space .progress-bar {
         background: linear-gradient(to right, #1e3c72, #2a5298);
     }
-    </style><style id="dynamic-background-styles">
+</style><style id="dynamic-background-styles">
     .hero-background {
         position: absolute;
         top: 0;
@@ -5703,7 +5703,7 @@ body, body * {
             opacity: 0.3;
         }
     }
-    </style><style id="mobile-enhancements">
+</style><style id="mobile-enhancements">
     /* Improved mobile navigation */
     @media (max-width: 768px) {
         /* Fix for theme switcher */
@@ -5730,13 +5730,6 @@ body, body * {
         /* Terminal toggle */
         .terminal-toggle {
             transform: translateX(-50%) scale(0.9);
-        }
-        
-        /* Fix for the confetti button */
-        .confetti-button {
-            bottom: 80px;
-            left: 10px;
-            transform: scale(0.9);
         }
         
         /* Reduce spacing for improved mobile layout */
@@ -5791,8 +5784,7 @@ body, body * {
         .theme-button:active,
         .magic-button:active,
         .terminal-toggle:active,
-        .audio-toggle:active,
-        .confetti-button:active {
+        .audio-toggle:active {
             transform: scale(0.95) !important;
             transition: transform 0.1s ease !important;
         }
@@ -5874,7 +5866,7 @@ body, body * {
         color: #7fa4ff;
         backdrop-filter: blur(5px);
     }
-    </style><style id="project-hover-effects">
+</style><style id="project-hover-effects">
     .project-card {
         position: relative;
         overflow: hidden;
@@ -6012,82 +6004,7 @@ body, body * {
         color: #7fa4ff;
         border: 1px solid rgba(127, 164, 255, 0.3);
     }
-    </style><style id="confetti-styles">
-    .confetti-button {
-        position: fixed;
-        bottom: 140px;
-        left: 20px;
-        width: 60px;
-        height: 60px;
-        background: linear-gradient(135deg, #FF5F6D, #FFC371);
-        color: white;
-        border: none;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 24px;
-        cursor: pointer;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        z-index: 1000;
-        overflow: hidden;
-        transition: all 0.3s ease;
-    }
-    
-    .confetti-button:hover {
-        transform: translateY(-5px) rotate(15deg);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-    }
-    
-    .confetti-button::before {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background: radial-gradient(circle, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0) 70%);
-        top: -100%;
-        left: -100%;
-        opacity: 0;
-        transition: opacity 0.3s ease;
-    }
-    
-    .confetti-button:hover::before {
-        opacity: 1;
-        animation: shine 1s forwards;
-    }
-    
-    .confetti-piece {
-        position: absolute;
-        width: 10px;
-        height: 10px;
-        background-color: #ff0000;
-        pointer-events: none;
-        z-index: 9999;
-    }
-    
-    /* Theme-specific confetti button */
-    body.theme-dark .confetti-button {
-        background: linear-gradient(135deg, #60a5fa, #3b82f6);
-    }
-    
-    body.theme-neon .confetti-button {
-        background: linear-gradient(135deg, #ff00ff, #00ffff);
-        box-shadow: 0 0 15px #ff00ff;
-    }
-    
-    body.theme-terminal .confetti-button {
-        background-color: #000000;
-        color: #00ff00;
-        border: 1px solid #00ff00;
-        border-radius: 0;
-    }
-    
-    body.theme-space .confetti-button {
-        background: linear-gradient(135deg, #1e3c72, #2a5298);
-        border: 1px solid rgba(255, 255, 255, 0.2);
-    }
-    </style>
-<style id="custom-scrollbars">
+    </style><style id="custom-scrollbars">
 /* Global Scrollbar Styling */
 ::-webkit-scrollbar {
     width: 10px;
@@ -6206,14 +6123,6 @@ body.theme-terminal * {
     position: fixed !important;
     bottom: 20px !important;
     left: 20px !important;
-    z-index: 1000 !important;
-}
-
-/* Position confetti button where the magic wand was */
-.confetti-button, #confetti-button {
-    position: fixed !important;
-    bottom: 80px !important;
-    right: 20px !important;
     z-index: 1000 !important;
 }
 </style>
@@ -7123,7 +7032,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <!-- Magic Button -->
 <button class="magic-button" id="magic-button">
 <i class="fas fa-magic"></i>
-</button><button class="confetti-button" id="confetti-button" title="Click for Confetti Effect!"><i class="fas fa-crown"></i></button>
+</button>
 <!-- Theme Indicator -->
 <div class="theme-indicator" id="theme-indicator">
 <div class="theme-dot"></div>
@@ -9386,133 +9295,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
-</script><script id="audio-player-script">
-    document.addEventListener('DOMContentLoaded', function() {
-        // Define tracks with reliable sources - using short, royalty-free ambient sounds
-        const tracks = [
-            { title: 'Ambient Piano', url: 'https://assets.mixkit.co/sfx/preview/mixkit-ethereal-fairy-win-sound-2019.mp3' },
-            { title: 'Soft Background', url: 'https://assets.mixkit.co/sfx/preview/mixkit-relaxing-bell-meditation-2782.mp3' },
-            { title: 'Calm Melody', url: 'https://assets.mixkit.co/sfx/preview/mixkit-fairy-bell-twinkle-2019.mp3' },
-            { title: 'Relaxing Rhythm', url: 'https://assets.mixkit.co/sfx/preview/mixkit-melodical-bonus-2018.mp3' },
-            { title: 'Focus Mode', url: 'https://assets.mixkit.co/sfx/preview/mixkit-magical-coin-win-1936.mp3' }
-        ];
-        
-        // Create audio element
-        const audio = new Audio();
-        
-        // Set default volume to a audible level
-        audio.volume = 0.5;
-        
-        let currentTrackIndex = 0;
-        let isPlaying = false;
-        
-        const audioPlayer = document.getElementById('audio-player');
-        const audioToggle = document.getElementById('audio-toggle');
-        const audioNext = document.getElementById('audio-next');
-        const audioTrackName = document.getElementById('audio-track-name');
-        const audioVolume = document.getElementById('audio-volume');
-        
-        if (!audioPlayer || !audioToggle || !audioTrackName) {
-            console.error('Audio player elements not found');
-            return;
-        }
-        
-        // Update current track display
-        function updateTrackDisplay() {
-            const track = tracks[currentTrackIndex];
-            audioTrackName.textContent = track.title;
-            
-            // Notify that track has changed
-            if (typeof showConsoleMessage === 'function') {
-                showConsoleMessage(`Now playing: ${track.title} 🎵`);
-            }
-        }
-        
-        // Function to play the current track
-        function playCurrentTrack() {
-            const track = tracks[currentTrackIndex];
-            
-            // Make sure we have a valid track
-            if (!track || !track.url) {
-                console.error('Invalid track or URL');
-                return;
-            }
-            
-            // Set new source and load it
-            audio.src = track.url;
-            
-            // Log what we're trying to play
-            console.log(`Playing track: ${track.title} from URL: ${track.url}`);
-            
-            // Play with error handling
-            audio.play()
-                .then(() => {
-                    console.log('Audio playback started successfully');
-                    isPlaying = true;
-                    audioToggle.querySelector('i').className = 'fas fa-pause';
-                    updateTrackDisplay();
-                })
-                .catch(err => {
-                    console.error('Error playing audio:', err);
-                    // Try next track on error
-                    currentTrackIndex = (currentTrackIndex + 1) % tracks.length;
-                    playCurrentTrack();
-                });
-        }
-        
-        // Function to pause the audio
-        function pauseAudio() {
-            audio.pause();
-            isPlaying = false;
-            audioToggle.querySelector('i').className = 'fas fa-play';
-        }
-        
-        // Handle track ending - play next track
-        audio.addEventListener('ended', function() {
-            currentTrackIndex = (currentTrackIndex + 1) % tracks.length;
-            playCurrentTrack();
-        });
-        
-        // Toggle audio playback
-        audioToggle.addEventListener('click', function() {
-            if (isPlaying) {
-                pauseAudio();
-            } else {
-                playCurrentTrack();
-            }
-        });
-        
-        // Next track button
-        if (audioNext) {
-            audioNext.addEventListener('click', function() {
-                currentTrackIndex = (currentTrackIndex + 1) % tracks.length;
-                if (isPlaying) {
-                    playCurrentTrack();
-                } else {
-                    updateTrackDisplay();
-                }
-            });
-        }
-        
-        // Volume control
-        if (audioVolume) {
-            audioVolume.addEventListener('input', function() {
-                audio.volume = this.value / 100;
-            });
-        }
-        
-        // Initialize track display
-        updateTrackDisplay();
-        
-        // Auto-start first track after a short delay
-        setTimeout(() => {
-            // Notify user that audio is available
-            if (typeof showConsoleMessage === 'function') {
-                showConsoleMessage("Music player ready! Click play to listen 🎵");
-            }
-        }, 3000);
-    });
-    </script><div class="matrix-terminal" id="matrix-terminal"><div class="terminal-header"><div class="terminal-title">Matrix Terminal</div><button class="terminal-close" id="terminal-close" onclick="document.getElementById('matrix-terminal').classList.remove('open');">×</button></div><div class="terminal-content" id="terminal-content"><div class="terminal-output" id="terminal-output"></div><div class="terminal-input-container"><span class="terminal-prompt">&gt;</span><input autocomplete="off" class="terminal-input" id="terminal-input" placeholder="Enter a command..." type="text"/></div></div></div><button class="terminal-toggle" id="terminal-toggle" onclick="document.getElementById('matrix-terminal').classList.add('open'); setTimeout(function() { document.getElementById('terminal-input').focus(); }, 100);" title="Open Terminal"><i class="fas fa-terminal"></i></button><script id="matrix-terminal-script">
+</script><script id="matrix-terminal-script">
     document.addEventListener('DOMContentLoaded', function() {
         const terminal = document.getElementById('matrix-terminal');
         const terminalToggle = document.getElementById('terminal-toggle');
@@ -10145,404 +9928,264 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     });
-    </script><script id="confetti-script">
+    </script><script id="matrix-terminal-script">
     document.addEventListener('DOMContentLoaded', function() {
-        const confettiButton = document.getElementById('confetti-button');
+        const terminal = document.getElementById('matrix-terminal');
+        const terminalToggle = document.getElementById('terminal-toggle');
+        const terminalClose = document.getElementById('terminal-close');
+        const terminalInput = document.getElementById('terminal-input');
+        const terminalOutput = document.getElementById('terminal-output');
         
-        if (confettiButton) {
-            confettiButton.addEventListener('click', createConfetti);
-        }
+        console.log("Terminal elements:", Boolean(terminal), Boolean(terminalToggle), Boolean(terminalClose));
         
-        function createConfetti() {
-            // Create container for confetti
-            const container = document.createElement('div');
-            container.id = 'confetti-container';
-            container.style.position = 'fixed';
-            container.style.top = '0';
-            container.style.left = '0';
-            container.style.width = '100%';
-            container.style.height = '100%';
-            container.style.pointerEvents = 'none';
-            container.style.zIndex = '9998';
-            document.body.appendChild(container);
-            
-            // Show celebratory message
-            if (typeof showConsoleMessage === 'function') {
-                showConsoleMessage("🎉 Let's celebrate! 🎉");
-            } else {
-                console.log("🎉 Let's celebrate! 🎉");
-                
-                // Fallback console message if showConsoleMessage doesn't exist
-                const consoleMessage = document.getElementById('console-message');
-                if (consoleMessage) {
-                    const consoleText = document.getElementById('console-text');
-                    if (consoleText) {
-                        consoleText.textContent = "🎉 Let's celebrate! 🎉";
-                    }
-                    consoleMessage.classList.add('active');
+        // Create direct terminal toggle function - override any existing handlers
+        if (terminalToggle) {
+            terminalToggle.onclick = function(e) {
+                console.log("Terminal toggle clicked");
+                e.preventDefault();
+                e.stopPropagation();
+                if (terminal) {
+                    terminal.classList.add('open');
+                    console.log("Terminal opened");
                     
+                    // Focus input after opening
                     setTimeout(() => {
-                        consoleMessage.classList.remove('active');
-                    }, 3000);
+                        if (terminalInput) {
+                            console.log("Focusing terminal input");
+                            terminalInput.focus();
+                            
+                            // Show welcome message if needed
+                            if (terminalOutput && terminalOutput.innerHTML.trim() === '') {
+                                terminalOutput.innerHTML = `
+                                    <div class="success">==============================================</div>
+                                    <div class="info">Welcome to Matrix Terminal v1.0</div>
+                                    <div class="info">Type "help" to see available commands.</div>
+                                    <div class="info">Try commands like "about", "projects", "skills", "joke"</div>
+                                    <div class="success">==============================================</div>
+                                    <div></div>
+                                `;
+                            }
+                        }
+                    }, 100);
                 }
-            }
-            
-            // Create confetti pieces
-            const colors = ['#ff0000', '#00ff00', '#0000ff', '#ffff00', '#ff00ff', '#00ffff', '#ffa500', '#ff69b4'];
-            const shapes = ['circle', 'square', 'triangle', 'rect', 'diamond'];
-            const confettiCount = 200;
-            
-            for (let i = 0; i < confettiCount; i++) {
-                const confetti = document.createElement('div');
-                confetti.className = 'confetti-piece';
-                
-                // Random position
-                confetti.style.left = `${Math.random() * 100}%`;
-                confetti.style.top = '-20px';
-                
-                // Random color
-                const color = colors[Math.floor(Math.random() * colors.length)];
-                confetti.style.backgroundColor = color;
-                
-                // Random size
-                const size = Math.random() * 10 + 5;
-                confetti.style.width = `${size}px`;
-                confetti.style.height = `${size}px`;
-                
-                // Random shape
-                const shape = shapes[Math.floor(Math.random() * shapes.length)];
-                switch (shape) {
-                    case 'circle':
-                        confetti.style.borderRadius = '50%';
-                        break;
-                    case 'square':
-                        // Default is square
-                        break;
-                    case 'triangle':
-                        confetti.style.width = '0';
-                        confetti.style.height = '0';
-                        confetti.style.backgroundColor = 'transparent';
-                        confetti.style.borderLeft = `${size/2}px solid transparent`;
-                        confetti.style.borderRight = `${size/2}px solid transparent`;
-                        confetti.style.borderBottom = `${size}px solid ${color}`;
-                        break;
-                    case 'rect':
-                        confetti.style.width = `${size * 1.5}px`;
-                        confetti.style.height = `${size * 0.5}px`;
-                        break;
-                    case 'diamond':
-                        confetti.style.transform = 'rotate(45deg)';
-                        break;
-                }
-                
-                // Random rotation
-                confetti.style.transform += ` rotate(${Math.random() * 360}deg)`;
-                
-                // Add to container
-                container.appendChild(confetti);
-                
-                // Animate the confetti
-                const duration = Math.random() * 3 + 2;
-                const delay = Math.random() * 3;
-                
-                confetti.style.animation = `confettiFall ${duration}s ease-in ${delay}s forwards, confettiSway ${duration/2}s ease-in-out ${delay}s infinite alternate`;
-            }
-            
-            // Add keyframes for confetti animations
-            if (!document.getElementById('confetti-keyframes')) {
-                const style = document.createElement('style');
-                style.id = 'confetti-keyframes';
-                style.textContent = `
-                    @keyframes confettiFall {
-                        to {
-                            top: 100vh;
-                            transform: rotate(${Math.random() * 360 + 720}deg) scale(0.5);
-                            opacity: 0;
-                        }
-                    }
-                    
-                    @keyframes confettiSway {
-                        from {
-                            transform: translateX(-20px) rotate(${Math.random() * 360}deg);
-                        }
-                        to {
-                            transform: translateX(20px) rotate(${Math.random() * 360 + 180}deg);
-                        }
-                    }
-                `;
-                document.head.appendChild(style);
-            }
-            
-            // Clean up after animation
-            setTimeout(() => {
-                container.remove();
-            }, 6000);
+            };
         }
-    });
-    </script>
-<script id="critical-fixes">
-// Wait until document is fully loaded and all scripts have executed
-document.addEventListener('DOMContentLoaded', function() {
-    console.log("⚡ Critical fixes loading");
-    
-    // ===== TERMINAL FIX =====
-    // Get terminal elements
-    const terminal = document.getElementById('matrix-terminal');
-    const terminalToggle = document.getElementById('terminal-toggle');
-    const terminalClose = document.getElementById('terminal-close');
-    const terminalInput = document.getElementById('terminal-input');
-    const terminalOutput = document.getElementById('terminal-output');
-    
-    console.log("Terminal elements:", Boolean(terminal), Boolean(terminalToggle), Boolean(terminalClose));
-    
-    // Create direct terminal toggle function - override any existing handlers
-    if (terminalToggle) {
-        terminalToggle.onclick = function(e) {
-            console.log("Terminal toggle clicked");
-            e.preventDefault();
-            e.stopPropagation();
-            if (terminal) {
-                terminal.classList.add('open');
-                console.log("Terminal opened");
-                
-                // Focus input after opening
-                setTimeout(() => {
-                    if (terminalInput) {
-                        console.log("Focusing terminal input");
-                        terminalInput.focus();
-                        
-                        // Show welcome message if needed
-                        if (terminalOutput && terminalOutput.innerHTML.trim() === '') {
-                            terminalOutput.innerHTML = `
-                                <div class="success">==============================================</div>
-                                <div class="info">Welcome to Matrix Terminal v1.0</div>
-                                <div class="info">Type "help" to see available commands.</div>
-                                <div class="info">Try commands like "about", "projects", "skills", "joke"</div>
-                                <div class="success">==============================================</div>
-                                <div></div>
-                            `;
-                        }
-                    }
-                }, 100);
-            }
-        };
-    }
-    
-    // Create direct terminal close function
-    if (terminalClose) {
-        terminalClose.onclick = function(e) {
-            console.log("Terminal close clicked");
-            e.preventDefault();
-            e.stopPropagation();
-            if (terminal) {
-                terminal.classList.remove('open');
-                console.log("Terminal closed");
-            }
-        };
-    }
-    
-    // Handle terminal input
-    if (terminalInput && terminalOutput) {
-        // Process input submission
-        terminalInput.onkeydown = function(e) {
-            if (e.key === 'Enter') {
-                const input = this.value.trim();
-                console.log("Terminal input submitted:", input);
-                
-                if (input) {
-                    // Show command
-                    const commandLine = document.createElement('div');
-                    commandLine.textContent = '> ' + input;
-                    terminalOutput.appendChild(commandLine);
-                    
-                    // Process command
-                    processTerminalCommand(input, terminalOutput);
-                    
-                    // Clear input
-                    this.value = '';
-                    
-                    // Scroll to bottom
-                    terminalOutput.scrollTop = terminalOutput.scrollHeight;
-                }
-            }
-        };
-    }
-    
-    // Terminal command processor
-    function processTerminalCommand(command, output) {
-        const cmd = command.toLowerCase().split(' ')[0];
-        const args = command.split(' ').slice(1);
         
-        // Available commands
-        const commands = {
-            'help': function() {
-                const helpLine = document.createElement('div');
-                helpLine.className = 'info';
-                helpLine.textContent = "Available commands:";
-                output.appendChild(helpLine);
-                
-                const commandList = [
-                    "help - Show this help message",
-                    "about - Show information about Ram",
-                    "clear - Clear the terminal",
-                    "theme - Change website theme",
-                    "projects - List projects",
-                    "contact - Show contact information",
-                    "skills - List skills and expertise",
-                    "time - Show current time",
-                    "date - Show current date",
-                    "joke - Tell a developer joke",
-                    "music - Toggle music playback",
-                    "echo [text] - Echo text back",
-                    "exit - Close the terminal"
-                ];
-                
-                commandList.forEach(cmd => {
-                    const cmdLine = document.createElement('div');
-                    cmdLine.textContent = "  " + cmd;
-                    output.appendChild(cmdLine);
-                });
-            },
-            'clear': function() {
-                output.innerHTML = '';
-            },
-            'about': function() {
-                const aboutLine = document.createElement('div');
-                aboutLine.className = 'info';
-                aboutLine.textContent = "Ram Erlikh - Developer & Creative Technologist";
-                output.appendChild(aboutLine);
-                
-                const aboutDesc = document.createElement('div');
-                aboutDesc.textContent = "Currently building innovative web solutions and creative digital experiences.";
-                output.appendChild(aboutDesc);
-            },
-            'echo': function() {
-                const echoLine = document.createElement('div');
-                echoLine.textContent = args.join(' ');
-                output.appendChild(echoLine);
-            },
-            'exit': function() {
+        // Create direct terminal close function
+        if (terminalClose) {
+            terminalClose.onclick = function(e) {
+                console.log("Terminal close clicked");
+                e.preventDefault();
+                e.stopPropagation();
                 if (terminal) {
                     terminal.classList.remove('open');
+                    console.log("Terminal closed");
                 }
-            },
-            'time': function() {
-                const timeLine = document.createElement('div');
-                timeLine.className = 'info';
-                timeLine.textContent = "Current time: " + new Date().toLocaleTimeString();
-                output.appendChild(timeLine);
-            },
-            'date': function() {
-                const dateLine = document.createElement('div');
-                dateLine.className = 'info';
-                dateLine.textContent = "Current date: " + new Date().toLocaleDateString();
-                output.appendChild(dateLine);
-            },
-            'theme': function() {
-                const themeBtn = document.getElementById('theme-button');
-                if (themeBtn) {
-                    themeBtn.click();
-                    const themeLine = document.createElement('div');
-                    themeLine.className = 'success';
-                    themeLine.textContent = "Theme changed!";
-                    output.appendChild(themeLine);
-                }
-            },
-            'joke': function() {
-                const jokes = [
-                    "Why do programmers prefer dark mode? Because light attracts bugs!",
-                    "A programmer walks into a bar and orders 1.0000001 root beers. The bartender says, 'I'll have to round that up.'",
-                    "How do you comfort a JavaScript bug? You console it!",
-                    "Why do Java developers wear glasses? Because they can't C#!",
-                    "What's a developer's favorite place in the house? The function room!",
-                    "Why don't developers like nature? It has too many bugs!",
-                    "A developer returned from shopping and their spouse asked, 'Did you get the bread?' They replied, 'They didn't have any, so I didn't get the milk either.'"
-                ];
-                
-                const randomJoke = jokes[Math.floor(Math.random() * jokes.length)];
-                const jokeLine = document.createElement('div');
-                jokeLine.className = 'info';
-                jokeLine.textContent = randomJoke;
-                output.appendChild(jokeLine);
-            },
-            'music': function() {
-                const playBtn = document.getElementById('audio-toggle');
-                if (playBtn) {
-                    playBtn.click();
-                    const musicLine = document.createElement('div');
-                    musicLine.className = 'success';
-                    musicLine.textContent = "Music toggled!";
-                    output.appendChild(musicLine);
-                }
-            },
-            'projects': function() {
-                const projectsLine = document.createElement('div');
-                projectsLine.className = 'info';
-                projectsLine.textContent = "Projects:";
-                output.appendChild(projectsLine);
-                
-                const projects = [
-                    "1. Belletty Arts - A creative platform for artistic projects",
-                    "2. Fashion Store WebApp - A full-stack e-commerce web application",
-                    "3. beTTer - Ultimate TT Dashboard Chrome extension with advanced productivity features",
-                     "4. Location Overlay - Real-time GPS location and weather overlay for streaming platforms",
-                    "4. GitHub Projects - Various open-source contributions"
-                ];
-                
-                projects.forEach(project => {
-                    const prjLine = document.createElement('div');
-                    prjLine.textContent = "  " + project;
-                    output.appendChild(prjLine);
-                });
-            },
-            'skills': function() {
-                const skillsLine = document.createElement('div');
-                skillsLine.className = 'info';
-                skillsLine.textContent = "Skills & Expertise:";
-                output.appendChild(skillsLine);
-                
-                const skills = [
-                    "→ Front-End: HTML5/CSS3, JavaScript, React",
-                    "→ Back-End: Node.js, Python, API Development",
-                    "→ Design: UI/UX, Creative Direction, Visual Communication"
-                ];
-                
-                skills.forEach(skill => {
-                    const skillLine = document.createElement('div');
-                    skillLine.textContent = "  " + skill;
-                    output.appendChild(skillLine);
-                });
-            },
-            'contact': function() {
-                const contactLine = document.createElement('div');
-                contactLine.className = 'info';
-                contactLine.textContent = "Contact Information:";
-                output.appendChild(contactLine);
-                
-                const contacts = [
-                    "Email: businessuniquryrn@gmail.com",
-                    "LinkedIn: linkedin.com/in/ram-erlikh",
-                    "GitHub: github.com/RamErlikh"
-                ];
-                
-                contacts.forEach(contact => {
-                    const contactLine = document.createElement('div');
-                    contactLine.textContent = "  " + contact;
-                    output.appendChild(contactLine);
-                });
-            }
-        };
-        
-        // Execute command if it exists
-        if (commands[cmd]) {
-            commands[cmd]();
-        } else {
-            const errorLine = document.createElement('div');
-            errorLine.className = 'error';
-            errorLine.textContent = `Command not found: ${cmd}. Type "help" for available commands.`;
-            output.appendChild(errorLine);
+            };
         }
-    }
+        
+        // Handle terminal input
+        if (terminalInput && terminalOutput) {
+            // Process input submission
+            terminalInput.onkeydown = function(e) {
+                if (e.key === 'Enter') {
+                    const input = this.value.trim();
+                    console.log("Terminal input submitted:", input);
+                    
+                    if (input) {
+                        // Show command
+                        const commandLine = document.createElement('div');
+                        commandLine.textContent = '> ' + input;
+                        terminalOutput.appendChild(commandLine);
+                        
+                        // Process command
+                        processTerminalCommand(input, terminalOutput);
+                        
+                        // Clear input
+                        this.value = '';
+                        
+                        // Scroll to bottom
+                        terminalOutput.scrollTop = terminalOutput.scrollHeight;
+                    }
+                }
+            };
+        }
+        
+        // Terminal command processor
+        function processTerminalCommand(command, output) {
+            const cmd = command.toLowerCase().split(' ')[0];
+            const args = command.split(' ').slice(1);
+            
+            // Available commands
+            const commands = {
+                'help': function() {
+                    const helpLine = document.createElement('div');
+                    helpLine.className = 'info';
+                    helpLine.textContent = "Available commands:";
+                    output.appendChild(helpLine);
+                    
+                    const commandList = [
+                        "help - Show this help message",
+                        "about - Show information about Ram",
+                        "clear - Clear the terminal",
+                        "theme - Change website theme",
+                        "projects - List projects",
+                        "contact - Show contact information",
+                        "skills - List skills and expertise",
+                        "time - Show current time",
+                        "date - Show current date",
+                        "joke - Tell a developer joke",
+                        "music - Toggle music playback",
+                        "echo [text] - Echo text back",
+                        "exit - Close the terminal"
+                    ];
+                    
+                    commandList.forEach(cmd => {
+                        const cmdLine = document.createElement('div');
+                        cmdLine.textContent = "  " + cmd;
+                        output.appendChild(cmdLine);
+                    });
+                },
+                'clear': function() {
+                    output.innerHTML = '';
+                },
+                'about': function() {
+                    const aboutLine = document.createElement('div');
+                    aboutLine.className = 'info';
+                    aboutLine.textContent = "Ram Erlikh - Developer & Creative Technologist";
+                    output.appendChild(aboutLine);
+                    
+                    const aboutDesc = document.createElement('div');
+                    aboutDesc.textContent = "Currently building innovative web solutions and creative digital experiences.";
+                    output.appendChild(aboutDesc);
+                },
+                'echo': function() {
+                    const echoLine = document.createElement('div');
+                    echoLine.textContent = args.join(' ');
+                    output.appendChild(echoLine);
+                },
+                'exit': function() {
+                    if (terminal) {
+                        terminal.classList.remove('open');
+                    }
+                },
+                'time': function() {
+                    const timeLine = document.createElement('div');
+                    timeLine.className = 'info';
+                    timeLine.textContent = "Current time: " + new Date().toLocaleTimeString();
+                    output.appendChild(timeLine);
+                },
+                'date': function() {
+                    const dateLine = document.createElement('div');
+                    dateLine.className = 'info';
+                    dateLine.textContent = "Current date: " + new Date().toLocaleDateString();
+                    output.appendChild(dateLine);
+                },
+                'theme': function() {
+                    const themeBtn = document.getElementById('theme-button');
+                    if (themeBtn) {
+                        themeBtn.click();
+                        const themeLine = document.createElement('div');
+                        themeLine.className = 'success';
+                        themeLine.textContent = "Theme changed!";
+                        output.appendChild(themeLine);
+                    }
+                },
+                'joke': function() {
+                    const jokes = [
+                        "Why do programmers prefer dark mode? Because light attracts bugs!",
+                        "A programmer walks into a bar and orders 1.0000001 root beers. The bartender says, 'I'll have to round that up.'",
+                        "How do you comfort a JavaScript bug? You console it!",
+                        "Why do Java developers wear glasses? Because they can't C#!",
+                        "What's a developer's favorite place in the house? The function room!",
+                        "Why don't developers like nature? It has too many bugs!",
+                        "A developer returned from shopping and their spouse asked, 'Did you get the bread?' They replied, 'They didn't have any, so I didn't get the milk either.'"
+                    ];
+                    
+                    const randomJoke = jokes[Math.floor(Math.random() * jokes.length)];
+                    const jokeLine = document.createElement('div');
+                    jokeLine.className = 'info';
+                    jokeLine.textContent = randomJoke;
+                    output.appendChild(jokeLine);
+                },
+                'music': function() {
+                    const playBtn = document.getElementById('audio-toggle');
+                    if (playBtn) {
+                        playBtn.click();
+                        const musicLine = document.createElement('div');
+                        musicLine.className = 'success';
+                        musicLine.textContent = "Music toggled!";
+                        output.appendChild(musicLine);
+                    }
+                },
+                'projects': function() {
+                    const projectsLine = document.createElement('div');
+                    projectsLine.className = 'info';
+                    projectsLine.textContent = "Projects:";
+                    output.appendChild(projectsLine);
+                    
+                    const projects = [
+                        "1. Belletty Arts - A creative platform for artistic projects",
+                        "2. Fashion Store WebApp - A full-stack e-commerce web application",
+                        "3. beTTer - Ultimate TT Dashboard Chrome extension with advanced productivity features",
+                         "4. Location Overlay - Real-time GPS location and weather overlay for streaming platforms",
+                        "4. GitHub Projects - Various open-source contributions"
+                    ];
+                    
+                    projects.forEach(project => {
+                        const prjLine = document.createElement('div');
+                        prjLine.textContent = "  " + project;
+                        output.appendChild(prjLine);
+                    });
+                },
+                'skills': function() {
+                    const skillsLine = document.createElement('div');
+                    skillsLine.className = 'info';
+                    skillsLine.textContent = "Skills & Expertise:";
+                    output.appendChild(skillsLine);
+                    
+                    const skills = [
+                        "→ Front-End: HTML5/CSS3, JavaScript, React",
+                        "→ Back-End: Node.js, Python, API Development",
+                        "→ Design: UI/UX, Creative Direction, Visual Communication"
+                    ];
+                    
+                    skills.forEach(skill => {
+                        const skillLine = document.createElement('div');
+                        skillLine.textContent = "  " + skill;
+                        output.appendChild(skillLine);
+                    });
+                },
+                'contact': function() {
+                    const contactLine = document.createElement('div');
+                    contactLine.className = 'info';
+                    contactLine.textContent = "Contact Information:";
+                    output.appendChild(contactLine);
+                    
+                    const contacts = [
+                        "Email: businessuniquryrn@gmail.com",
+                        "LinkedIn: linkedin.com/in/ram-erlikh",
+                        "GitHub: github.com/RamErlikh"
+                    ];
+                    
+                    contacts.forEach(contact => {
+                        const contactLine = document.createElement('div');
+                        contactLine.textContent = "  " + contact;
+                        output.appendChild(contactLine);
+                    });
+                }
+            };
+            
+            // Execute command if it exists
+            if (commands[cmd]) {
+                commands[cmd]();
+            } else {
+                const errorLine = document.createElement('div');
+                errorLine.className = 'error';
+                errorLine.textContent = `Command not found: ${cmd}. Type "help" for available commands.`;
+                output.appendChild(errorLine);
+            }
+        }
     
     // ===== AUDIO PLAYER FIX =====
     console.log("Fixing audio player");
@@ -10728,7 +10371,10 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 })();
 </script>
-<script id="critical-fixes">
+</script>
+</div>
+</body>
+</html>
 // Initialize when document is fully loaded
 document.addEventListener('DOMContentLoaded', function() {
     console.log("ðŸ”§ Loading critical fixes");
@@ -11621,101 +11267,6 @@ window.addEventListener('load', function() {
 
 
 </script>
-<!-- Music Player Fix -->
-<script id="music-player-fix">
-if (!window.__musicPlayerInjected) {
-  window.__musicPlayerInjected = true;
-  window.addEventListener('load', function(){
-    setTimeout(function(){
-      // Remove any existing audio elements.
-      document.querySelectorAll('audio').forEach(function(a){
-        a.pause();
-        a.remove();
-      });
-      
-      // Define the 5 SoundHelix tracks.
-      var tracks = [
-        { title: 'SoundHelix Song 1', url: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3' },
-        { title: 'SoundHelix Song 2', url: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3' },
-        { title: 'SoundHelix Song 3', url: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3' },
-        { title: 'SoundHelix Song 4', url: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3' },
-        { title: 'SoundHelix Song 5', url: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3' }
-      ];
-      var currentTrackIndex = 0;
-      
-      // Create a new hidden audio element.
-      var audio = document.createElement('audio');
-      audio.id = "myAudio";
-      audio.src = tracks[currentTrackIndex].url;
-      audio.preload = "auto";
-      audio.style.display = "none";
-      document.body.appendChild(audio);
-      
-      // Function to update the toggle button icon.
-      function updateToggleIcon() {
-        var btn = document.getElementById("audio-toggle");
-        if (btn) {
-          btn.innerHTML = audio.paused ? '<i class="fas fa-play"></i>' : '<i class="fas fa-pause"></i>';
-        }
-      }
-      audio.addEventListener("play", updateToggleIcon);
-      audio.addEventListener("pause", updateToggleIcon);
-      
-      // When a track ends, auto-cycle to the next track.
-      audio.addEventListener("ended", function(){
-        currentTrackIndex = (currentTrackIndex + 1) % tracks.length;
-        audio.src = tracks[currentTrackIndex].url;
-        audio.load();
-        audio.play().catch(function(err){
-          console.error("Error playing next track:", err);
-        });
-      });
-      
-      // Bind the toggle button.
-      var toggleButton = document.getElementById("audio-toggle");
-      if (!toggleButton) {
-        console.error("Audio toggle button with id 'audio-toggle' not found.");
-        return;
-      }
-      // Clone to remove any pre-bound listeners.
-      var newToggle = toggleButton.cloneNode(true);
-      toggleButton.parentNode.replaceChild(newToggle, toggleButton);
-      toggleButton = newToggle;
-      
-      // Toggle play/pause without resetting the current time.
-      toggleButton.addEventListener("click", function(e){
-        e.preventDefault();
-        if (audio.paused) {
-          audio.play().catch(function(err){ console.error("Error playing audio:", err); });
-        } else {
-          audio.pause();
-        }
-      }, true);
-      
-      // Bind the skip button.
-      var skipButton = document.getElementById("audio-next");
-      if (skipButton) {
-        var newSkip = skipButton.cloneNode(true);
-        skipButton.parentNode.replaceChild(newSkip, skipButton);
-        skipButton = newSkip;
-        skipButton.addEventListener("click", function(e){
-          e.preventDefault();
-          // Advance to next track.
-          currentTrackIndex = (currentTrackIndex + 1) % tracks.length;
-          audio.src = tracks[currentTrackIndex].url;
-          audio.load();
-          audio.play().catch(function(err){
-            console.error("Error playing next track:", err);
-          });
-        }, true);
-      } else {
-        console.warn("Skip button with id 'audio-next' not found.");
-      }
-      
-      console.log("Music player fix injected.");
-    }, 1000);
-  });
-}
-</script>
+</div>
 </body>
 </html>
