@@ -8569,7 +8569,7 @@ document.addEventListener('DOMContentLoaded', function() {
     </script>
 <style id="journey-fix">
 
-/* Fixed Timeline Styles - Proper Alignment */
+/* Symmetrical Timeline Styles - Enhanced */
 .timeline {
     position: relative;
     max-width: 1200px;
@@ -8586,7 +8586,7 @@ document.addEventListener('DOMContentLoaded', function() {
     bottom: 0;
     left: 50%;
     margin-left: -1.5px;
-    z-index: 0; /* Behind everything */
+    z-index: 1;
     border-radius: 2px;
 }
 
@@ -8594,50 +8594,42 @@ document.addEventListener('DOMContentLoaded', function() {
     padding: 0;
     position: relative;
     background-color: inherit;
-    width: 45%; /* Reduced from 50% to give more space */
+    width: 50%;
     box-sizing: border-box;
     margin-bottom: 40px;
-    min-height: 140px;
+    min-height: 140px; /* Consistent height for symmetry */
     display: flex;
     align-items: center;
 }
 
-/* Left side boxes (odd) - move further left */
 .timeline-item:nth-child(odd) {
     left: 0;
-    padding-right: 80px; /* Increased padding to move away from center line */
-    margin-right: 5%; /* Additional margin to ensure separation */
+    padding-right: 50px;
 }
 
-/* Right side boxes (even) - move further right */
 .timeline-item:nth-child(even) {
-    left: 55%; /* Moved further right from 50% */
-    padding-left: 80px; /* Increased padding to move away from center line */
+    left: 50%;
+    padding-left: 50px;
 }
 
-/* Timeline dots - positioned on the center line */
 .timeline-item::after {
     content: '';
     position: absolute;
     width: 24px;
     height: 24px;
+    right: -12px;
     top: 50%;
     transform: translateY(-50%);
     border-radius: 50%;
-    z-index: 10; /* Above the line */
+    z-index: 2;
     background: #3b82f6;
     border: 4px solid #fff;
     box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3), 0 4px 12px rgba(59, 130, 246, 0.2);
 }
 
-/* Dot positioning for left boxes */
-.timeline-item:nth-child(odd)::after {
-    right: -92px; /* Positioned on center line */
-}
-
-/* Dot positioning for right boxes */
 .timeline-item:nth-child(even)::after {
-    left: -92px; /* Positioned on center line */
+    left: -12px;
+    right: auto;
 }
 
 .timeline-content {
@@ -8649,13 +8641,12 @@ document.addEventListener('DOMContentLoaded', function() {
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     border: 1px solid rgba(59, 130, 246, 0.1);
-    min-height: 120px;
+    min-height: 120px; /* Fixed height for symmetry */
     display: flex;
     flex-direction: column;
     justify-content: center;
     word-wrap: break-word;
     overflow-wrap: break-word;
-    z-index: 5; /* Above the timeline line */
 }
 
 .timeline-content:hover {
@@ -8695,17 +8686,14 @@ document.addEventListener('DOMContentLoaded', function() {
     box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);
     border: 2px solid #3b82f6;
     white-space: nowrap;
-    z-index: 10; /* Above everything */
 }
 
-/* Date positioning for left boxes */
 .timeline-item:nth-child(odd) .timeline-date {
-    right: -50px; /* Closer to the center line */
+    right: -80px;
 }
 
-/* Date positioning for right boxes */
 .timeline-item:nth-child(even) .timeline-date {
-    left: -50px; /* Closer to the center line */
+    left: -80px;
 }
 
 /* Perfect Mobile Responsiveness */
@@ -8733,7 +8721,6 @@ document.addEventListener('DOMContentLoaded', function() {
         left: 0;
         padding-left: 90px;
         padding-right: 20px;
-        margin-right: 0;
     }
     
     .timeline-item:nth-child(odd)::after,
@@ -8801,35 +8788,6 @@ document.addEventListener('DOMContentLoaded', function() {
     .timeline-content p {
         font-size: 0.85rem;
     }
-}
-
-/* Ensure proper layering for all themes */
-body.theme-neon .timeline::before,
-body.theme-dark .timeline::before,
-body.theme-space .timeline::before,
-body.theme-vaporwave .timeline::before,
-body.theme-glass .timeline::before,
-body.theme-retro .timeline::before,
-body.theme-brutalist .timeline::before,
-body.theme-gradient .timeline::before,
-body.theme-portfolio .timeline::before,
-body.theme-cyberpunk .timeline::before,
-body.theme-modern-tech .timeline::before {
-    z-index: 0 !important;
-}
-
-body.theme-neon .timeline-content,
-body.theme-dark .timeline-content,
-body.theme-space .timeline-content,
-body.theme-vaporwave .timeline-content,
-body.theme-glass .timeline-content,
-body.theme-retro .timeline-content,
-body.theme-brutalist .timeline-content,
-body.theme-gradient .timeline-content,
-body.theme-portfolio .timeline-content,
-body.theme-cyberpunk .timeline-content,
-body.theme-modern-tech .timeline-content {
-    z-index: 5 !important;
 }
 </style>
 <script id="theme-switching-fix">
