@@ -4243,19 +4243,12 @@ body.theme-gradient .skill-progress {
 }
 
 .timeline-content {
-    padding: 25px 30px; /* More generous padding for rectangular look */
-    background: white;
-    position: relative;
-    border-radius: 10px; /* Slightly more rounded corners */
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
-    transition: all 0.3s ease;
-    min-height: 110px; /* Consistent minimum height for rectangular shape */
-    max-width: 420px; /* Maximum width for better proportions */
-    width: 100%; /* Full width within the item */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    aspect-ratio: 2.8/1; /* Maintain rectangular proportions */
+    width: calc(50% - 50px);
+    margin-left: 50%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .timeline-content h3 {
@@ -8701,11 +8694,8 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     .timeline-content {
-        padding: 20px 25px; /* Better mobile padding */
-        min-height: 100px; /* Slightly smaller on mobile */
-        max-width: none; /* Allow full width on mobile */
-        border-radius: 8px;
-        aspect-ratio: 2.5/1; /* Slightly different ratio for mobile */
+        padding: 15px 20px; /* Better mobile padding */
+        min-height: auto; /* Allow natural height */
     }
     
     .timeline-content h3 {
@@ -8732,24 +8722,16 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     .timeline-content {
-        padding: 25px 30px;
+        padding: 20px 25px;
         background: white;
         position: relative;
-        border-radius: 10px;
-        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+        border-radius: 8px;
+        box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
         transition: all 0.3s ease;
-        min-height: 110px; /* Consistent height for rectangular shape */
-        max-width: 420px; /* Maximum width for better proportions */
-        width: 100%;
+        min-height: 80px; /* Consistent content height */
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        aspect-ratio: 2.8/1; /* Maintain rectangular proportions */
-    }
-    
-    .timeline-content:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        justify-content: center; /* Center content vertically */
     }
     
     .timeline-content h3 {
@@ -8783,18 +8765,6 @@ document.addEventListener('DOMContentLoaded', function() {
     .timeline-item:nth-child(even) .timeline-date {
         left: -140px;
     }
-}
-
-
-.timeline-content:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-}
-
-.timeline-item:hover .timeline-date {
-    transform: translateY(-50%) scale(1.05);
-    background: #3b82f6;
-    color: white;
 }
 
 /* Theme-specific timeline styles */
