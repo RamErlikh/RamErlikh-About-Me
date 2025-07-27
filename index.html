@@ -5054,230 +5054,7 @@ body, body * {
     body.theme-space .timeline-date {
         color: #ffffff;
     }
-    </style><style id="audio-player-mini-styles">
-    .audio-player-mini {
-        position: fixed;
-        bottom: 200px;
-        left: 20px;
-        display: flex;
-        align-items: center;
-        z-index: 1000;
-        gap: 8px;
-    }
-    
-    .audio-button {
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        background-color: #3b82f6;
-        color: white;
-        border: none;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-        font-size: 12px;
-        transition: transform 0.2s ease;
-    }
-    
-    .audio-button:hover {
-        transform: scale(1.1);
-    }
-    
-    .audio-button:active {
-        transform: scale(0.95);
-    }
-    
-    .audio-volume-mini {
-        width: 60px;
-        height: 4px;
-        outline: none;
-        -webkit-appearance: none;
-        appearance: none;
-        background: rgba(0, 0, 0, 0.2);
-        border-radius: 2px;
-    }
-    
-    .audio-volume-mini::-webkit-slider-thumb {
-        -webkit-appearance: none;
-        appearance: none;
-        width: 12px;
-        height: 12px;
-        border-radius: 50%;
-        background: #3b82f6;
-    }
-    
-    .audio-volume-mini::-moz-range-thumb {
-        width: 12px;
-        height: 12px;
-        border-radius: 50%;
-        background: #3b82f6;
-        border: none;
-    }
-    
-    /* Theme-specific styles */
-    body.theme-dark .audio-button {
-        background-color: #60a5fa;
-    }
-    
-    body.theme-neon .audio-button {
-        background-color: #ff00ff;
-        box-shadow: 0 0 10px #ff00ff;
-    }
-    
-    body.theme-terminal .audio-button {
-        background-color: #000;
-        color: #00ff00;
-        border: 1px solid #00ff00;
-    }
-    </style><style id="audio-player-styles">
-    .audio-player {
-        position: fixed;
-        bottom: 80px;
-        left: 20px;
-        display: flex;
-        align-items: center;
-        z-index: 1000;
-        opacity: 0.9;
-        transition: all 0.3s ease;
-        background-color: rgba(0, 0, 0, 0.8);
-        padding: 10px 15px;
-        border-radius: 10px;
-        backdrop-filter: blur(5px);
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-        flex-wrap: wrap;
-        max-width: 300px;
-        border: 1px solid rgba(59, 130, 246, 0.5);
-    }
-    
-    .audio-player:hover {
-        opacity: 1;
-        transform: translateY(-5px);
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
-    }
-    
-    .audio-title {
-        color: white;
-        font-weight: bold;
-        margin-bottom: 8px;
-        width: 100%;
-        text-align: center;
-        font-size: 14px;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-        padding-bottom: 5px;
-    }
-    
-    .audio-toggle, .audio-next {
-        width: 36px;
-        height: 36px;
-        border-radius: 50%;
-        background-color: #3b82f6;
-        color: white;
-        border: none;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-        margin-right: 10px;
-        transition: all 0.3s ease;
-    }
-    
-    .audio-toggle:hover, .audio-next:hover {
-        transform: scale(1.1);
-        box-shadow: 0 3px 12px rgba(0, 0, 0, 0.3);
-        background-color: #2563eb;
-    }
-    
-    .audio-track-name {
-        background-color: rgba(255, 255, 255, 0.1);
-        padding: 5px 10px;
-        border-radius: 5px;
-        font-size: 12px;
-        color: white;
-        max-width: 120px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        margin-right: 10px;
-    }
-    
-    .audio-volume {
-        width: 100%;
-        margin-top: 8px;
-        height: 5px;
-        outline: none;
-        -webkit-appearance: none;
-        appearance: none;
-        background: rgba(255, 255, 255, 0.2);
-        border-radius: 5px;
-        cursor: pointer;
-    }
-    
-    .audio-volume::-webkit-slider-thumb {
-        -webkit-appearance: none;
-        appearance: none;
-        width: 15px;
-        height: 15px;
-        border-radius: 50%;
-        background: #3b82f6;
-    }
-    
-    .audio-volume::-moz-range-thumb {
-        width: 15px;
-        height: 15px;
-        border-radius: 50%;
-        background: #3b82f6;
-        border: none;
-    }
-    
-    /* Theme-specific styles */
-    body.theme-dark .audio-toggle {
-        background-color: rgba(30, 41, 59, 0.8);
-        color: #60a5fa;
-        border: 1px solid rgba(96, 165, 250, 0.3);
-    }
-    
-    body.theme-dark .audio-track-name {
-        background-color: rgba(30, 41, 59, 0.8);
-        color: #e2e8f0;
-    }
-    
-    body.theme-neon .audio-toggle {
-        background-color: rgba(0, 0, 50, 0.7);
-        color: #00ffff;
-        border: 2px solid #ff00ff;
-        box-shadow: 0 0 15px #ff00ff;
-    }
-    
-    body.theme-neon .audio-track-name {
-        background-color: rgba(0, 0, 50, 0.7);
-        color: #00ffff;
-        border: 1px solid #ff00ff;
-    }
-    
-    body.theme-terminal .audio-toggle,
-    body.theme-terminal .audio-track-name {
-        background-color: #000000;
-        color: #00ff00;
-        border: 1px solid #00ff00;
-        border-radius: 0;
-    }
-    
-    body.theme-space .audio-toggle {
-        background-color: rgba(0, 10, 40, 0.6);
-        backdrop-filter: blur(5px);
-        color: #ffffff;
-        border: 1px solid rgba(255, 255, 255, 0.2);
-    }
-    
-    body.theme-space .audio-track-name {
-        background-color: rgba(0, 10, 40, 0.6);
-        backdrop-filter: blur(5px);
-        color: #ffffff;
-        border: 1px solid rgba(255, 255, 255, 0.2);
-    }
+    </style>
     </style><style id="cube-enhancement-styles">
     .cube-face {
         transition: all 0.3s ease, transform 0.5s ease !important;
@@ -5718,13 +5495,6 @@ body, body * {
             transform: scale(0.9);
         }
         
-        /* Fix for audio player */
-        .audio-player {
-            bottom: 140px;
-            left: 10px;
-            transform: scale(0.9);
-        }
-        
         /* Terminal toggle */
         .terminal-toggle {
             left: 10px;
@@ -5786,7 +5556,6 @@ body, body * {
         .theme-button:active,
         .magic-button:active,
         .terminal-toggle:active,
-        .audio-toggle:active,
         
         
         /* Loading screen optimization */
@@ -6137,18 +5906,6 @@ body.theme-terminal * {
     scrollbar-width: thin;
     scrollbar-color: #00ff00 rgba(0, 0, 0, 0.5);
 }
-</style>
-<style id="custom-positioning">
-/* Position audio player at bottom left */
-.audio-player-mini, #audio-player {
-    position: fixed !important;
-    bottom: 20px !important;
-    left: 20px !important;
-    z-index: 1000 !important;
-}
-
-
-
 </style>
 <!-- Cosmic Space Scrolling Fix -->
 <style id="cosmic-space-scroll-fix">
