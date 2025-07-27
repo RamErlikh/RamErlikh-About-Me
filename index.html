@@ -4213,7 +4213,7 @@ body.theme-gradient .skill-progress {
 
 .timeline-item {
     position: relative;
-    margin-bottom: 50px;
+    margin-bottom: 20px; left: 20px;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -5329,7 +5329,7 @@ body, body * {
     }
     
     .matrix-terminal.open {
-        bottom: 50px;
+        bottom: 20px; left: 20px;
     }
     
     .terminal-header {
@@ -5443,7 +5443,7 @@ body, body * {
     }
     
     .terminal-toggle:hover {
-        transform: translateX(-50%) scale(1.1);
+        transform: scale(1.1);
         box-shadow: 0 0 15px rgba(0, 255, 0, 0.8);
     }
     
@@ -5729,7 +5729,7 @@ body, body * {
         
         /* Terminal toggle */
         .terminal-toggle {
-            transform: translateX(-50%) scale(0.9);
+            transform: scale(0.9);
         }
         
         
@@ -9516,7 +9516,7 @@ document.addEventListener('DOMContentLoaded', function() {
         setTimeout(() => {
             // Notify user that audio is available
             if (typeof showConsoleMessage === 'function') {
-                showConsoleMessage("Music player ready! Click play to listen 🎵");
+                
             }
         }, 3000);
     });
@@ -10392,7 +10392,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     "time - Show current time",
                     "date - Show current date",
                     "joke - Tell a developer joke",
-                    "music - Toggle music playback",
+                    
                     "echo [text] - Echo text back",
                     "exit - Close the terminal"
                 ];
@@ -10867,7 +10867,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         "date - Show current date",
                         "echo [text] - Echo text back",
                         "matrix - Toggle matrix rain effect",
-                        "music - Toggle music playback",
+                        
                         "exit - Close the terminal"
                     ];
                     
@@ -11719,6 +11719,19 @@ if (!window.__musicPlayerInjected) {
 </script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
