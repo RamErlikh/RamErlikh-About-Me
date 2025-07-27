@@ -6906,7 +6906,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <div class="timeline-date">2025</div>
 <div class="timeline-content">
 <h3>Current Projects</h3>
-<p>Working on innovative web applications and creative digital experiences including CreatoLay - Professional Streaming Overlays platform and CreatoLay - Professional Streaming Overlays platform and Fashion Store WebApp collaboration.</p>
+<p>Working on innovative web applications and creative digital experiences including Fashion Store WebApp collaboration.</p>
 </div>
 </div>
 <div class="timeline-item">
@@ -6973,8 +6973,8 @@ document.addEventListener('DOMContentLoaded', function() {
 </a></a>
 <a class="project-card" href="https://github.com/RamErlikh/locationoverlay" target="_blank">
 <div class="project-content">
-<h3>CreatoLay</h3>
-<p>Professional real-time CreatoLays for live streams. Works seamlessly with IRL Pro, Moblin, and all major streaming platforms with battery optimization and smart controls.</p>
+<h3>Location Overlay</h3>
+<p>Real-time GPS location, time, and weather overlay for streaming platforms with multi-source location detection and weather integration.</p>
 <div class="project-icon"><i class="fas fa-map-marker-alt"></i></div><div class="project-tags"><span class="project-tag">Streaming</span><span class="project-tag">GPS</span><span class="project-tag">Weather</span></div></div>
 <a class="project-card" href="https://github.com/RamErlikh" target="_blank">
 <div class="project-content">
@@ -10485,7 +10485,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     "1. Belletty Arts - A creative platform for artistic projects",
                     "2. Fashion Store WebApp - A full-stack e-commerce web application",
                     "3. beTTer - Ultimate TT Dashboard Chrome extension with advanced productivity features",
-                     "4. CreatoLay - Professional streaming overlays with real-time location, weather, and battery optimization",
+                     "4. Location Overlay - Real-time GPS location and weather overlay for streaming platforms",
                     "4. GitHub Projects - Various open-source contributions"
                 ];
                 
@@ -10900,7 +10900,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         "1. Belletty Arts - A creative platform for artistic projects",
                         "2. Fashion Store WebApp - A full-stack e-commerce web application",
                         "3. beTTer - Ultimate TT Dashboard Chrome extension with advanced productivity features",
-                     "4. CreatoLay - Professional streaming overlays with real-time location, weather, and battery optimization",
+                     "4. Location Overlay - Real-time GPS location and weather overlay for streaming platforms",
                         "4. GitHub Projects - Various open-source contributions"
                     ];
                     
@@ -11719,9 +11719,4 @@ if (!window.__musicPlayerInjected) {
 </script>
 </body>
 </html>
-
-
-
-
-
 
