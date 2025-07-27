@@ -594,7 +594,7 @@
             height: 200px;
             position: absolute;
             top: 50%;
-            left: 50%;
+            left: 20px;
             transform-style: preserve-3d;
             transform: translateX(-50%) translateY(-50%) rotateX(0deg) rotateY(0deg);
             transition: transform 0.3s ease;
@@ -997,7 +997,7 @@
             background: transparent;
             border: 2px solid rgba(96, 165, 250, 0.3);
             top: 50%;
-            left: 50%;
+            left: 20px;
             transform: translate(-50%, -50%);
             animation: pulse 2s infinite;
             z-index: 1;
@@ -1173,7 +1173,7 @@
             background: transparent;
             border: 1px solid rgba(96, 165, 250, 0.1);
             top: 50%;
-            left: 50%;
+            left: 20px;
             transform: translate(-50%, -50%);
             animation: pulse 4s infinite;
             z-index: 0;
@@ -1357,7 +1357,7 @@
             width: 200px;
             height: 200px;
             top: 50%;
-            left: 50%;
+            left: 20px;
             transform: translate(-50%, -50%);
             background: transparent;
             border: 2px solid #ff00ff;
@@ -1762,7 +1762,7 @@
             background-color: #000000;
             box-shadow: none;
             width: 80%;
-            max-width: 400px;
+            max-width: 350px;
             margin: 0 auto 30px;
         }
         
@@ -4203,7 +4203,7 @@ body.theme-gradient .skill-progress {
 .timeline::before {
     content: '';
     position: absolute;
-    left: 50%;
+    left: 20px;
     top: 0;
     transform: translateX(-50%);
     width: 2px;
@@ -4213,7 +4213,7 @@ body.theme-gradient .skill-progress {
 
 .timeline-item {
     position: relative;
-    margin-bottom: 20px; left: 20px;
+    margin-bottom: 20px; left: 20px; right: auto;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -4221,7 +4221,7 @@ body.theme-gradient .skill-progress {
 
 .timeline-dot {
     position: absolute;
-    left: 50%;
+    left: 20px;
     top: 10px;
     transform: translateX(-50%);
     width: 20px;
@@ -4244,7 +4244,7 @@ body.theme-gradient .skill-progress {
 
 .timeline-content {
     width: calc(50% - 50px);
-    margin-left: 50%;
+    margin-left: 20px;
     padding: 20px;
     background-color: #fff;
     border-radius: 5px;
@@ -5312,7 +5312,7 @@ body, body * {
     .matrix-terminal {
         position: fixed;
         bottom: -500px;
-        left: 50%;
+        left: 20px;
         transform: translateX(-50%);
         width: 80%;
         max-width: 800px;
@@ -5329,7 +5329,7 @@ body, body * {
     }
     
     .matrix-terminal.open {
-        bottom: 20px; left: 20px;
+        bottom: 20px; left: 20px; right: auto;
     }
     
     .terminal-header {
@@ -5418,7 +5418,7 @@ body, body * {
     .terminal-toggle {
         position: fixed;
         bottom: 20px;
-        left: 50%;
+        left: 20px;
         transform: translateX(-50%);
         width: 50px;
         height: 50px;
@@ -8583,7 +8583,7 @@ document.addEventListener('DOMContentLoaded', function() {
     background: #3b82f6;
     top: 0;
     bottom: 0;
-    left: 50%;
+    left: 20px;
     margin-left: -1px;
     z-index: 1;
 }
@@ -8602,7 +8602,7 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 .timeline-item:nth-child(even) {
-    left: 50%;
+    left: 20px;
 }
 
 .timeline-item::after {
@@ -11719,6 +11719,9 @@ if (!window.__musicPlayerInjected) {
 </script>
 </body>
 </html>
+
+
+
 
 
 
